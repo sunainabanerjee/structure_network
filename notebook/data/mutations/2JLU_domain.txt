@@ -1,0 +1,7 @@
+mutant,domain,motif
+A286L,1,1a
+R387M,2,
+T407A,2,5
+T407C,2,5
+S411A,2,5
+S411C,2,5

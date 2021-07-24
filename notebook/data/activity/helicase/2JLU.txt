@@ -1,0 +1,7 @@
+mutant,percent,activity
+A286L,0,-1
+R387M,0,-1
+T407A,170,1
+T407C,135,1
+S411A,349,1
+S411C,461,1

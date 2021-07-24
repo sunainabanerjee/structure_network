@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Pycharmm related project files
+.idea
+
 # C extensions
 *.so
 
