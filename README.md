@@ -17,6 +17,21 @@ All these concepts are organized as submodule in the project.
 `networks` | Network analysis
 `structure` | Protein structure parsing
 
+## Installation
+The `structure_network` is a Python library developed on Python __3.8__. 
+We recommend a virtual environment setup with the following steps : 
+```commandline
+conda create -n <virtname> python=3.8
+conda activate <virtname>
+pip -r <install directory>/requirements/common.txt
+```
+Prior to library usage, please ensure the root directory (installation directory) is in the python path.
+
+```commandline
+# for linux environments
+export PYTHONPATH="<install directory>":$PYTHONPATH
+```
+
 
 
 
