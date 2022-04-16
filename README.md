@@ -32,6 +32,21 @@ Prior to library usage, please ensure the root directory (installation directory
 export PYTHONPATH="<install directory>":$PYTHONPATH
 ```
 
+## Usage 
+### Example notebook : NetworkAnalysisDemo
+This notebook demonstrates 
+ - how to import a target PDB and view it $C_\alpha$ - $C_\alpha$ network.
+ - how to compute network properties for the pdb-derived structure network 
+ - how to derive strongly connected components on the undirected structure network (Markov based clustering)
+ - how to create a point mutation of choice and estimate ts effect on network properties 
+ - how to define sites (groups of residues) within the structure network and analyze network communication properties
+
+#### Build structure network
+The network generation uses various parameters, viz. `distance_threshold`, and `energy_threshold`.
+Distance threshold is the maximum distance bound in Angstrom to draw an edge in the network. 
+Energy threshold is the minimum contact energy value needed to be a valid contact. 
+`threshold_type` dynamically changes the thresholding conditions. 
+The `potential` parameter provides a choice for pair potential selection, supported potentials are `MJ` and `CHARMM`.
 
 
 
