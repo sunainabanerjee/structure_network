@@ -13,7 +13,7 @@ All these concepts are organized as submodule in the project.
 *Module Name* |  *Description*
 ------------- |  -------------
 `ds` | Data structure 
-`geometry` | Geometry operations
+`geometry` | Geometry operations 
 `networks` | Network analysis
 `structure` | Protein structure parsing
 

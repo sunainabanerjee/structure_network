@@ -1,0 +1,9 @@
+# Requirements
+# The suggested Python version is >= 3.8
+# The following installations are required to perform the analysis
+numpy>=1.19.5
+scipy>=1.5.2
+networkx>=2.5
+matplotlib>=3.3.2
+nglview>=2.7.7
+jupyterlab
