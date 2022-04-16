@@ -50,7 +50,7 @@ The `potential` parameter provides a choice for pair potential selection, suppor
 
 The Derived network represents ![formula](https://render.githubusercontent.com/render/math?math=C_{\alpha})  network.
 The edges of the structure network is weighted by the pair potential score.
-Each nodes of the network represent a residue of the PDB structure. The library
+Each node of the network represents a residue of the PDB structure. The library
 allows query the amino acid properties for each node.
 
 #### Compute Structure Network Properties
@@ -63,10 +63,19 @@ node and edge centrality computation, network flow analysis, connected component
 clustering. 
 
 #### Markov Clustering
-
+Markov clustering is carried out the weighted protein structure network, where the weights are pair potentials/interaction energy. 
+Unlike the shortest path analysis, higher edge weights in markov clustering suggest higher chances of random walk through the edge.
+Our main objective is to perform markov clustering on protein structure network to discover strongly connected structural components. 
 
 #### Perform Sequence Mutation
-
+`MutationAnalyzer` creates an internal representation of point mutation on structure. It assumes the point mutation does not affect residue contact pattern, but affects the side-chain contacts. 
+It allows comparison of a single point residue change with respect to the base structure. 
+`register_mutation` uses base structure as input, and a valid residue id and valid amino-acid change. Multiple single point mutations can be prepared in one-shot. A comparative analysis of network properties can be carried out among the point mutations using this library. 
+In situation of improper mutation specification the model silently ignores the specified mutation. `registered_mutations` API allows access to all prepared mutations.
 
 #### Group Analysis
+Library allows group definitions by specifying a set of residues in the structure. 
+Residue groups can indicate source (ligand binding) and target (effector) residues, or sequence-based motifs. 
+Further analysis of structure-driven communication between these residue groups can be carried out with the library. 
+The library allows the assessment of mutant effect on the structure network using `MutationGroupAnalyzer`.
 
