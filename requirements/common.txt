@@ -6,4 +6,5 @@ scipy>=1.5.2
 networkx>=2.5
 matplotlib>=3.3.2
 nglview>=2.7.7
+markov-clustering
 jupyterlab

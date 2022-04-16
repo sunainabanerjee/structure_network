@@ -48,5 +48,25 @@ Energy threshold is the minimum contact energy value needed to be a valid contac
 `threshold_type` dynamically changes the thresholding conditions. 
 The `potential` parameter provides a choice for pair potential selection, supported potentials are `MJ` and `CHARMM`.
 
+The Derived network represents ![formula](https://render.githubusercontent.com/render/math?math=C_{\alpha})  network.
+The edges of the structure network is weighted by the pair potential score.
+Each nodes of the network represent a residue of the PDB structure. The library
+allows query the amino acid properties for each node.
 
+#### Compute Structure Network Properties
+`structure_network` library allow computation of the various network properties on the 
+pdb-derived network. Typically the pair potential is a positive score. Unlike energetics 
+higher score represents favourable residue interaction. For such reason to derive a meanigful and
+consistent analysis based on shortest path, prior to analysis each edge weights inverted by 
+```max_value + min_value - current_value```. Different network analysis supported by the libraries are
+node and edge centrality computation, network flow analysis, connected component analysis, and markov 
+clustering. 
+
+#### Markov Clustering
+
+
+#### Perform Sequence Mutation
+
+
+#### Group Analysis
 
