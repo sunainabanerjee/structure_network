@@ -35,7 +35,7 @@ export PYTHONPATH="<install directory>":$PYTHONPATH
 ## Usage 
 ### Example notebook : NetworkAnalysisDemo
 This notebook demonstrates 
- - how to import a target PDB and view it $$C_\alpha - C_\alpha$$ network.
+ - how to import a target PDB and view it ![formula](https://render.githubusercontent.com/render/math?math=C_{\alpha}-C_{\alpha}) network.
  - how to compute network properties for the pdb-derived structure network 
  - how to derive strongly connected components on the undirected structure network (Markov based clustering)
  - how to create a point mutation of choice and estimate ts effect on network properties 
